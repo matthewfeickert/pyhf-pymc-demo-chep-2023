@@ -6,7 +6,7 @@ docker pull \
 
 docker run --rm \
     -v $PWD/binder:/read \
-    python -m venv venv && \
+    "${base_image}" /bin/bash -c 'python -m venv venv && \
     . venv/bin/activate && \
     command -v python &&
     python -m pip install --upgrade \
