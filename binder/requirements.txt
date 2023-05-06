@@ -204,7 +204,7 @@ ipywidgets==8.0.6 \
     # via ipympl
 jax==0.4.8 \
     --hash=sha256:08116481f7336db16c24812bfb5e6f9786915f4c2f6ff4028331fa69e7535202
-    # via pyhf-pymc
+    # via -r requirements.in
 jedi==0.18.2 \
     --hash=sha256:203c1fd9d969ab8f2119ec0a3342e0b49910045abe6af0a3ae83a5764d54639e \
     --hash=sha256:bae794c30d07f6d910d32a7048af09b5a39ed740918da923c6b780790ebac612
@@ -354,9 +354,9 @@ matplotlib==3.7.1 \
     --hash=sha256:f883a22a56a84dba3b588696a2b8a1ab0d2c3d41be53264115c71b0a942d8fdb \
     --hash=sha256:fbdeeb58c0cf0595efe89c05c224e0a502d1aa6a8696e68a73c3efc6bc354304
     # via
+    #   -r requirements.in
     #   arviz
     #   ipympl
-    #   pyhf-pymc
 matplotlib-inline==0.1.6 \
     --hash=sha256:f1f41aab5328aa5aaea9b16d083b128102f8712542f819fe7e6a420ff581b311 \
     --hash=sha256:f887e5f10ba98e8d2b150ddcf4702c1e5f8b3a20005eb0f74bfdbd360ee6f304
@@ -437,7 +437,6 @@ numpy==1.24.3 \
     #   opt-einsum
     #   pandas
     #   pyhf
-    #   pyhf-pymc
     #   pymc
     #   pytensor
     #   scipy
@@ -607,15 +606,11 @@ pygments==2.15.1 \
 pyhf==0.7.1 \
     --hash=sha256:1a3007bb2858bab2ffee37cd7b2fe4a0dd3faf18cc49c45f6696c299880dfadf \
     --hash=sha256:26a5058c4ec89e5116925ca16559087e733612ebbf2da005f4202c6b7200def2
-    # via pyhf-pymc
-# WARNING: pip install will require the following package to be hashed.
-# Consider using a hashable URL like https://github.com/jazzband/pip-tools/archive/SOMECOMMIT.zip
-pyhf-pymc @ git+https://github.com/malin-horstmann/pyhf_pymc.git@9b01ae974020f4873491d7557389019d1d2b4995
     # via -r requirements.in
 pymc==5.3.1 \
     --hash=sha256:986b3cbf2b72a1822557a29088b50f4f3fdb3c8297d29c1fa5e474a1c8c65935 \
     --hash=sha256:9f1601c2d057a25c1925d9a82dfd998482a02cea096b65f1f9cf3af64c69ece4
-    # via pyhf-pymc
+    # via -r requirements.in
 pyparsing==3.0.9 \
     --hash=sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb \
     --hash=sha256:5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc
@@ -672,9 +667,7 @@ pytensor==2.11.2 \
     --hash=sha256:de9928601211cb146e28f4f40040824c098d94898ea1044830a5c1a6b2638365 \
     --hash=sha256:f2cddd189b9313b89d4f0282e2551ccccc4e9e6862b343174c1f3c250067253d \
     --hash=sha256:f62b04b3ca556747b098fb9640f30d31cdaa58681fc62c8602d331b0a84927ad
-    # via
-    #   pyhf-pymc
-    #   pymc
+    # via pymc
 python-dateutil==2.8.2 \
     --hash=sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86 \
     --hash=sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9
