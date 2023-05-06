@@ -2,3 +2,4 @@
 # https://github.com/malin-horstmann/pyhf_pymc/archive/9b01ae974020f4873491d7557389019d1d2b4995.zip
 # as lacking metadata
 pyhf_pymc @ git+https://github.com/malin-horstmann/pyhf_pymc.git@9b01ae974020f4873491d7557389019d1d2b4995
+ipympl==0.9.3
