@@ -99,6 +99,10 @@ contourpy==1.0.7 \
     --hash=sha256:fc1464c97579da9f3ab16763c32e5c5d5bb5fa1ec7ce509a4ca6108b61b84fab \
     --hash=sha256:fd7dc0e6812b799a34f6d12fcb1000539098c249c8da54f3566c6a6461d0dbad
     # via matplotlib
+corner==2.2.2 \
+    --hash=sha256:4bc79f3b6778c270103f0926e64ef2606c48c3b6f92daf5382fc4babf5d608d1 \
+    --hash=sha256:e7577cdb59cfa304effa243b0c7ac0e3777030d3dc2f2e217a387e87a47074bb
+    # via -r requirements.in
 cycler==0.11.0 \
     --hash=sha256:3a27e95f763a428a739d2add979fa7494c912a32c17c4c38c4d5f082cad165a3 \
     --hash=sha256:9c87405839a19696e837b3b818fed3f5f69f16f1eec1a1ad77e043dcea9c772f
@@ -136,6 +140,10 @@ executing==1.2.0 \
     --hash=sha256:0314a69e37426e3608aada02473b4161d4caf5a4b244d1d0c48072b8fee7bacc \
     --hash=sha256:19da64c18d2d851112f09c287f8d3dbbdf725ab0e569077efb6cdcbd3497c107
     # via stack-data
+fastjsonschema==2.16.3 \
+    --hash=sha256:04fbecc94300436f628517b05741b7ea009506ce8f946d40996567c669318490 \
+    --hash=sha256:4a30d6315a68c253cfa8f963b9697246315aa3db89f98b97235e345dedfb0b8e
+    # via nbformat
 fastprogress==1.0.3 \
     --hash=sha256:6dfea88f7a4717b0a8d6ee2048beae5dbed369f932a368c5dd9caff34796f7c5 \
     --hash=sha256:7a17d2b438890f838c048eefce32c4ded47197ecc8ea042cecc33d3deb8022f5
@@ -205,6 +213,20 @@ ipywidgets==8.0.6 \
 jax==0.4.8 \
     --hash=sha256:08116481f7336db16c24812bfb5e6f9786915f4c2f6ff4028331fa69e7535202
     # via -r requirements.in
+jaxlib==0.4.7 \
+    --hash=sha256:022b216036c009989d4c0683538820c19247215bb99fdd35c7bf32838d596be6 \
+    --hash=sha256:0ae7178c33460822d9d8d03718cba395e02e6bac2402709c35826c94f0c9cc7b \
+    --hash=sha256:0c16f922507277d5630e81d9c1a4974366a27aad5230d645d063bc2011564d01 \
+    --hash=sha256:48b85d3c8923b1619ddf8cbf14c4e4daf6919796d8aa9d006ce2a085e8202930 \
+    --hash=sha256:63c2890978e8646516db3d8a680b43d2bed8b63543a70556391f589a261bd85f \
+    --hash=sha256:a860f2990c97bee5ffcdbb5111751591e5e7a66d5e32b4f6d9e6aa14ac82bf27 \
+    --hash=sha256:c78dc2b6fa1c92ead137a23d1bd3e10d04c58b268e77eca811502abac05b2b19 \
+    --hash=sha256:d0f1d3b6ef6c68013898cca958ab1507d6809b523275037efbdb9aaaaab158ba \
+    --hash=sha256:d4629205dbe342153941db5f69c4a1bfe35fd8d2947aebe34f4dff3771d3fff7 \
+    --hash=sha256:da88382e6487805974cea6facc61ba92b5828a7a1f2dd80f762c487d873a2b47 \
+    --hash=sha256:ea07605e37d2b4e25f3c639e0d22ab4605fbc1a10ea918fd14ce09077bdaffb6 \
+    --hash=sha256:f1f3726e374d0d6fcc14da540b71b758d37356c6726f0f4b48e2f5530a5f8769
+    # via -r requirements.in
 jedi==0.18.2 \
     --hash=sha256:203c1fd9d969ab8f2119ec0a3342e0b49910045abe6af0a3ae83a5764d54639e \
     --hash=sha256:bae794c30d07f6d910d32a7048af09b5a39ed740918da923c6b780790ebac612
@@ -220,7 +242,9 @@ jsonpointer==2.3 \
 jsonschema==4.17.3 \
     --hash=sha256:0f864437ab8b6076ba6707453ef8f98a6a0d512a80e93f8abdb676f737ecb60d \
     --hash=sha256:a870ad254da1a8ca84b6a2905cac29d265f805acc57af304784962a2aa6508f6
-    # via pyhf
+    # via
+    #   nbformat
+    #   pyhf
 jupyter-client==8.2.0 \
     --hash=sha256:9fe233834edd0e6c0aa5f05ca2ab4bdea1842bfd2d8a932878212fc5301ddaf0 \
     --hash=sha256:b18219aa695d39e2ad570533e0d71fb7881d35a873051054a84ee2a17c4b7389
@@ -231,10 +255,15 @@ jupyter-core==5.3.0 \
     # via
     #   ipykernel
     #   jupyter-client
+    #   nbformat
 jupyterlab-widgets==3.0.7 \
     --hash=sha256:c3a50ed5bf528a0c7a869096503af54702f86dda1db469aee1c92dc0c01b43ca \
     --hash=sha256:c73f8370338ec19f1bec47254752d6505b03601cbd5a67e6a0b184532f73a459
     # via ipywidgets
+jupytext==1.14.5 \
+    --hash=sha256:976e66be8056459a2067e0ec3ff68cc31e00c31895faf9eb893022d319e8f5b4 \
+    --hash=sha256:a5dbe60d0ea158bbf82c2bce74aba8d0c220ad7edcda09e017c5eba229b34dc8
+    # via -r requirements.in
 kiwisolver==1.4.4 \
     --hash=sha256:02f79693ec433cb4b5f51694e8477ae83b3205768a6fb48ffba60549080e295b \
     --hash=sha256:03baab2d6b4a54ddbb43bba1a3a2d1627e82d205c5cf8f4c924dc49284b87166 \
@@ -311,6 +340,12 @@ logical-unification==0.4.5 \
     #   cons
     #   minikanren
     #   pytensor
+markdown-it-py==2.2.0 \
+    --hash=sha256:5a35f8d1870171d9acc47b99612dc146129b631baf04970128b568f190d0cc30 \
+    --hash=sha256:7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1
+    # via
+    #   jupytext
+    #   mdit-py-plugins
 matplotlib==3.7.1 \
     --hash=sha256:08308bae9e91aca1ec6fd6dda66237eef9f6294ddb17f0d0b3c863169bf82353 \
     --hash=sha256:14645aad967684e92fc349493fa10c08a6da514b3d03a5931a1bac26e6792bd1 \
@@ -356,6 +391,7 @@ matplotlib==3.7.1 \
     # via
     #   -r requirements.in
     #   arviz
+    #   corner
     #   ipympl
 matplotlib-inline==0.1.6 \
     --hash=sha256:f1f41aab5328aa5aaea9b16d083b128102f8712542f819fe7e6a420ff581b311 \
@@ -363,6 +399,14 @@ matplotlib-inline==0.1.6 \
     # via
     #   ipykernel
     #   ipython
+mdit-py-plugins==0.3.5 \
+    --hash=sha256:ca9a0714ea59a24b2b044a1831f48d817dd0c817e84339f20e7889f392d77c4e \
+    --hash=sha256:eee0adc7195e5827e17e02d2a258a2ba159944a0748f59c5099a4a27f78fcf6a
+    # via jupytext
+mdurl==0.1.2 \
+    --hash=sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8 \
+    --hash=sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba
+    # via markdown-it-py
 minikanren==1.0.3 \
     --hash=sha256:1ec8bdb01144ad5e8752c7c297fb8a122db920f859276d25a72d164e998d7f6e
     # via pytensor
@@ -384,7 +428,9 @@ ml-dtypes==0.1.0 \
     --hash=sha256:c9218175b06764b8ddc95cb18d11a6c4b48a4b103a31c9ea2b2c3cd0cfc369f8 \
     --hash=sha256:dee8ea629b8e3e20c6649852c1b9deacfa13384ab9337f2c9e717e401d102f23 \
     --hash=sha256:ffb7882dd46399217dc54f37affc899e0a29a4cfb63e5bf733ac0baf4a179c77
-    # via jax
+    # via
+    #   jax
+    #   jaxlib
 multipledispatch==0.6.0 \
     --hash=sha256:407e6d8c5fa27075968ba07c4db3ef5f02bea4e871e959570eeb69ee39a6565b \
     --hash=sha256:a55c512128fb3f7c2efd2533f2550accb93c35f1045242ef74645fc92a2c3cba \
@@ -393,6 +439,10 @@ multipledispatch==0.6.0 \
     #   etuples
     #   logical-unification
     #   minikanren
+nbformat==5.8.0 \
+    --hash=sha256:46dac64c781f1c34dfd8acba16547024110348f9fc7eab0f31981c2a3dc48d1f \
+    --hash=sha256:d910082bd3e0bffcf07eabf3683ed7dda0727a326c446eeb2922abe102e65162
+    # via jupytext
 nest-asyncio==1.5.6 \
     --hash=sha256:b9a953fb40dceaa587d109609098db21900182b16440652454a146cffb06e8b8 \
     --hash=sha256:d267cc1ff794403f7df692964d1d2a3fa9418ffea2a3f6859a439ff482fef290
@@ -432,6 +482,7 @@ numpy==1.24.3 \
     #   h5py
     #   ipympl
     #   jax
+    #   jaxlib
     #   matplotlib
     #   ml-dtypes
     #   opt-einsum
@@ -720,7 +771,9 @@ pyyaml==6.0 \
     --hash=sha256:dbad0e9d368bb989f4515da330b88a057617d16b6a8245084f1b05400f24609f \
     --hash=sha256:e61ceaab6f49fb8bdfaa0f92c4b57bcfbea54c09277b1b4f7ac376bfb7a7c174 \
     --hash=sha256:f84fbc98b019fef2ee9a1cb3ce93e3187a6df0b2538a651bfb890254ba9f90b5
-    # via pyhf
+    # via
+    #   jupytext
+    #   pyhf
 pyzmq==25.0.2 \
     --hash=sha256:032f5c8483c85bf9c9ca0593a11c7c749d734ce68d435e38c3f72e759b98b3c9 \
     --hash=sha256:08bfcc21b5997a9be4fefa405341320d8e7f19b4d684fb9c0580255c5bd6d695 \
@@ -827,6 +880,7 @@ scipy==1.10.1 \
     # via
     #   arviz
     #   jax
+    #   jaxlib
     #   pyhf
     #   pymc
     #   pytensor
@@ -842,6 +896,10 @@ stack-data==0.6.2 \
     --hash=sha256:32d2dd0376772d01b6cb9fc996f3c8b57a357089dec328ed4b6553d037eaf815 \
     --hash=sha256:cbb2a53eb64e5785878201a97ed7c7b94883f48b87bfb0bbe8b623c74679e4a8
     # via ipython
+toml==0.10.2 \
+    --hash=sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b \
+    --hash=sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f
+    # via jupytext
 toolz==0.12.0 \
     --hash=sha256:2059bd4148deb1884bb0eb770a3cde70e7f954cfbbdc2285f1f2de01fd21eb6f \
     --hash=sha256:88c570861c440ee3f2f6037c4654613228ff40c93a6c25e0eba70d17282c6194
@@ -879,6 +937,7 @@ traitlets==5.9.0 \
     #   jupyter-client
     #   jupyter-core
     #   matplotlib-inline
+    #   nbformat
 typing-extensions==4.5.0 \
     --hash=sha256:5cb5f4a79139d699607b3ef622a1dedafa84e115ab0024e0d9c044a9479ca7cb \
     --hash=sha256:fb33085c39dd998ac16d1431ebc293a8b3eedd00fd4a32de0ff79002c19511b4
