@@ -15,7 +15,7 @@ docker run --rm \
         wheel && \
     python -m pip install pip-tools && \
     cp /read/requirements.txt . && \
-    pip-compile --generate-hashes --resolver=backtracking --output-file requirements.lock requirements.txt && \
+    pip-compile --generate-hashes --output-file=requirements.lock --resolver=backtracking requirements.txt && \
     cp requirements.lock /read/'
 
 # Make lockfile local user owned
