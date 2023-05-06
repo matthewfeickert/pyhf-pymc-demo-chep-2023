@@ -1,7 +1,11 @@
 #pyhf-pymc
 pyhf==0.7.1
 jax==0.4.8
+jaxlib==0.4.7
 pymc==5.3.1
 matplotlib==3.7.1
-#extras
+# examples
+corner==2.2.2
+# extras
+jupytext==1.14.5
 ipympl==0.9.3
