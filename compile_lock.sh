@@ -9,6 +9,8 @@ docker run --rm \
     "${base_image}" /bin/bash -c 'python -m venv venv && \
     . venv/bin/activate && \
     command -v python &&
+    apt-get update && \
+    apt-get install --no-install-recommends -yq git && \
     python -m pip install --upgrade \
         pip \
         setuptools \
@@ -19,6 +21,6 @@ docker run --rm \
     cp requirements.lock /read/'
 
 # Make lockfile local user owned
-mv requirements.lock tmp.lock
-cp tmp.lock requirements.lock
+mv binder/requirements.lock tmp.lock
+cp tmp.lock binder/requirements.lock
 rm tmp.lock
