@@ -5,7 +5,7 @@ docker pull \
     "${base_image}"
 
 docker run --rm \
-    -v $PWD/binder:/read \
+    -v $PWD:/read \
     "${base_image}" /bin/bash -c 'python -m venv venv && \
     . venv/bin/activate && \
     command -v python &&
@@ -21,6 +21,6 @@ docker run --rm \
     cp requirements.lock /read/'
 
 # Make lockfile local user owned
-mv binder/requirements.lock tmp.lock
-cp tmp.lock binder/requirements.lock
+mv requirements.lock tmp.lock
+cp tmp.lock requirements.lock
 rm tmp.lock
