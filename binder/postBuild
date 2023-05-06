@@ -1,2 +1,2 @@
 python -m pip --no-cache-dir install --upgrade pip setuptools wheel
-python -m pip install --no-deps binder/requirements.lock
+python -m pip install --no-deps requirements.txt
