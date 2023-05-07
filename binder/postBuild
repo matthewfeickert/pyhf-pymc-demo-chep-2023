@@ -1,0 +1,6 @@
+python -m pip --no-cache-dir install --upgrade pip setuptools wheel
+python -m pip install --no-deps --requirement requirements.txt
+# Skipping using
+# https://github.com/malin-horstmann/pyhf_pymc/archive/9b01ae974020f4873491d7557389019d1d2b4995.zip
+# as lacking metadata
+python -m pip install --upgrade 'pyhf_pymc @ git+https://github.com/malin-horstmann/pyhf_pymc.git@9b01ae974020f4873491d7557389019d1d2b4995'
