@@ -12,25 +12,10 @@ import logging
 from pathlib import Path
 from random import randint
 
-import arviz as az
-import corner
-import jax
-import jax.numpy as jnp
-import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
 import pyhf
 import pymc as pm
-import pytensor
-from jax import grad, jit, random, value_and_grad, vmap
-from matplotlib import cm
-from matplotlib.colors import LinearSegmentedColormap, ListedColormap
 from pyhf_pymc import infer, make_op, plotting, prepare_inference
-from pytensor import tensor as pt
-from pytensor.graph import Apply, Op
-from pytensor.graph.basic import Apply
-from pytensor.tensor.type import TensorType
 
 # %%
 logger = logging.getLogger("pymc")
