@@ -50,7 +50,7 @@ expData_op = make_op.make_op(model)
 
 # %%
 # https://www.hepdata.net/record/ins1869695
-with open("ttbar_ljets_xsec_inclusive_pruned.json") as serialized:
+with open("ttbar_ljets_xsec_inclusive_pruned.json", encoding="utf-8") as serialized:
     spec = json.load(serialized)
 
 workspace = pyhf.Workspace(spec)
